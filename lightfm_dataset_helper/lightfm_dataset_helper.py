@@ -54,7 +54,7 @@ class DatasetHelper(Preprocessor):
             if clean_unknown_interactions:
                 self.clean_unknown_interactions_func()
 
-            self.dataset = Dataset()
+            self.dataset = Dataset(user_identity_features=False)
             self.item_features_list = None
             self.user_features_list = None
 
